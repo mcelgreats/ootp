@@ -1,0 +1,1666 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Scoreboard: Friday, June 17th , 2016</title>
+<meta name="content-language" content="en-us">
+<meta name="content-type" content="text/html;charset=UTF-8">
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" type="text/css" href="../styles.css">
+<script src="../scripts/sorttable.js"></script>
+
+
+<script language="javascript" type="text/javascript">
+
+	function IsDate(_year, _month, _day) 
+	{
+		var month = _month * 1;
+		var day = _day * 1;
+		var year = _year * 1;
+		
+		if (month < 1 || month > 12) 
+		{ 
+			return false;
+		}
+		
+		if (day < 1 || day > 31) 
+		{
+			return false;
+		}
+		
+		if ((month==4 || month==6 || month==9 || month==11) && day==31) 
+		{
+			return false;
+		}
+		
+		if (month == 2) 
+		{
+			var isleap = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+			if (day > 29 || (day==29 && !isleap)) 
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	function go(url, which)
+	{
+		var y, m, d, x, box;
+		
+		box = document.forms[0].day;
+		d = box.options[box.selectedIndex].value;
+
+		box = document.forms[0].month;
+		m = box.options[box.selectedIndex].value;
+
+		box = document.forms[0].year;
+		y = box.options[box.selectedIndex].value;
+
+		if (IsDate(y, m, d))
+		{
+			if (which==1) x = d;
+			else if (which==2) x = m;
+			else if (which==3) x = y;
+		
+			if (which==1 && x.length==1) x="0"+x;
+			else if (which==2 && x.length==1) x="0"+x;
+			
+			rExp = /TOKEN/gi;
+			location.href = url.replace(rExp, x);
+		}
+	}
+
+</script>
+
+</head>
+
+<body class="ext_bg">
+
+<table cellspacing="0" cellpadding="0" align="center" width="968px">
+
+	<!-- OOTP IGNORE START LEAGUE HEADER -->
+	<tr>
+		<td>
+			<table border="0" width="968px" cellspacing="0" cellpadding="0" style="background-image:url(../images/report_header.jpg); background-repeat:no-repeat;">
+				<tr style="height:160px;">
+					<td align="left" valign="top" style="padding:4px 0px 0px 4px;"><a href="../leagues/league_135_home.html"><img src="../images/league_logos/major_league.png" border="0" title="Major League"></a></td>
+					<td valign="top">
+						<table width="648px" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td align="center" valign="top" style="padding-top:22px;">
+									<div class="reptitle">MAJOR LEAGUE</div>
+									<div class="repsubtitle">SCOREBOARD: FRIDAY, JUNE 17TH , 2016</div>
+									<div style="text-align:center; color:#FFFFFF; padding-top:4px;">10/02/2016</div>
+								</td>
+								<td><img src="../images/pixel.gif" width="1" height="138"></td>
+							</tr>
+							<tr>
+								<td align="center" valign="top" class="menu">
+									<a href="../index.html" class="menu">BNN Index</a>  |
+									<a href="../leagues/league_135_home.html" class="menu">ML</a>  |
+									<a href="../leagues/league_135_scores.html" class="menu">SCORES</a>  |
+									<a href="../leagues/league_135_standings.html" class="menu">STANDINGS</a>  |
+									<a href="../leagues/league_135_stats.html" class="menu">STATS</a>  |
+									<a href="../leagues/league_135_teams.html" class="menu">TEAMS</a>  |
+									<a href="../leagues/league_135_players.html" class="menu">PLAYERS</a>  |
+									<a href="../leagues/league_135_transactions_0_0.html" class="menu">TRANSACTIONS</a>  |
+									<a href="../history/league_135_index.html" class="menu">HISTORY</a>
+								</td>
+								<td><img src="../images/pixel.gif" width="1" height="22"></td>
+							</tr>
+						</table>
+					</td>
+					<td>&#160;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<!-- OOTP IGNORE END LEAGUE HEADER -->
+
+	
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="968px">
+				<tr>
+					<td valign="top" style="padding:0px 0px 0px 4px;">
+						<form>
+							<select name="day" style="width:50px;" onChange="javascript:go('../leagues/league_135_scores_2016_06_TOKEN.html',1)">
+								<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17" selected="1">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+
+							</select>
+							<select name="month" style="width:110px;" onChange="javascript:go('../leagues/league_135_scores_2016_TOKEN_17.html',2)">
+								<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6" selected="1">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+
+							</select>
+							<select name="year" style="width:70px;" onChange="javascript:go('../leagues/league_135_scores_TOKEN_06_17.html',3)"> 
+								<option value="2016" selected="1">2016</option>
+
+							</select>
+						</form>
+					</td>					
+					<td align="right">
+						<table cellspacing="0" cellpadding="0" class="data">
+							<tr>
+								<th width="70" valign="top">Weekday</th>
+								<th class="dc" width="36px">Fri</th>
+<th class="dc" width="36px">Sat</th>
+<th class="dc" width="36px">Sun</th>
+<th class="dc" width="36px">Mon</th>
+<th class="dc" width="36px">Tue</th>
+<th class="dc" width="36px">Wed</th>
+<th class="dc" width="36px">Thu</th>
+<th class="dc grey" width="36px">Fri</th>
+<th class="dc" width="36px">Sat</th>
+<th class="dc" width="36px">Sun</th>
+<th class="dc" width="36px">Mon</th>
+<th class="dc" width="36px">Tue</th>
+<th class="dc" width="36px">Wed</th>
+<th class="dc" width="36px">Thu</th>
+<th class="dc" width="36px">Fri</th>
+
+							</tr>	
+							<tr>
+								<td width="60" class="dl" valign="top">Date</td>
+								<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_10.html">10</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_11.html">11</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_12.html">12</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_13.html">13</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_14.html">14</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_15.html">15</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_16.html">16</a></td>
+<td class="dc grey bold" width="36px">&#160;17&#160;</td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_18.html">18</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_19.html">19</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_20.html">20</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_21.html">21</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_22.html">22</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_23.html">23</a></td>
+<td class="dc" width="36px"><a href="../leagues/league_135_scores_2016_06_24.html">24</a></td>
+
+							</tr>			
+							<tr>
+								<td width="60" class="dl">Games</td>
+								<td class="dc">15</td>
+<td class="dc">15</td>
+<td class="dc">15</td>
+<td class="dc">10</td>
+<td class="dc">15</td>
+<td class="dc">15</td>
+<td class="dc">10</td>
+<td class="dc grey bold">15</td>
+<td class="dc">15</td>
+<td class="dc">15</td>
+<td class="dc">9</td>
+<td class="dc">15</td>
+<td class="dc">15</td>
+<td class="dc">9</td>
+<td class="dc">15</td>
+
+							</tr>					
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>		
+				<table cellspacing="0" cellpadding="0" width="968px">
+		<tr><th colspan="2" class="boxtitle" style="padding:8px 0px 8px 4px;">American League</th></tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1006.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1006.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1008.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1008.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/toronto_blue_jays_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/baltimore_orioles_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">10</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_29.html" style="font-weight:bold;">Toronto</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">9</td>
+			<td class="dc " width="18px">13</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_3.html">Baltimore</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">4</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">7</td>
+			<td class="dc " width="18px">16</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Blue Jays Trip Orioles, 9-7, in Extra Innings<br>W: <a href="../players/player_21326.html">Mark Eichhorn</a> (2-0) L: <a href="../players/player_22188.html">B J Ryan</a> (1-3) S: <a href="../players/player_21311.html">Duane Ward</a> (11)<br>HR - TOR: <a href="../players/player_21350.html">Shawn Green</a> (6), <a href="../players/player_21353.html">Tony Fernandez</a> (5)  BAL: <a href="../players/player_22231.html">Paul Blair</a> (4)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/chicago_white_sox_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/cleveland_indians_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_5.html" style="font-weight:bold;">Chicago</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">2</td>
+			<td class="dc " width="18px">11</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_8.html">Cleveland</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">1</td>
+			<td class="dc " width="18px">5</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Cleveland Sunk by Chicago, 2-1<br>W: <a href="../players/player_22098.html">Red Faber</a> (7-4) L: <a href="../players/player_22489.html">Gaylord Perry</a> (9-4) S: <a href="../players/player_22079.html">Hoyt Wilhelm</a> (20)<br>HR - None
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1010.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1010.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1011.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1011.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/san_francisco_giants_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/tampa_bay_rays_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_25.html" style="font-weight:bold;">San Francisco</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">1</td>
+			<td class="dc " width="18px">6</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_27.html">Tampa Bay</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Schmidt Tosses No-Hitter Against Tampa Bay<br>W: <a href="../players/player_21574.html">Jason Schmidt</a> (4-5) L: <a href="../players/player_21421.html">David Price</a> (5-8) <br>HR - SF: <a href="../players/player_21606.html">Willie Mays</a> (13)  
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/seattle_mariners_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/boston_red_sox_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">10</th>
+						<th class="dc" width="18px">11</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_24.html">Seattle</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">4</td>
+			<td class="dc " width="18px">7</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_4.html" style="font-weight:bold;">Boston</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">5</td>
+			<td class="dc " width="18px">14</td>
+			<td class="dc " width="18px">2</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Mariners Lose, 5-4, in 11<br>W: <a href="../players/player_22137.html">Dick Radatz</a> (2-1) L: <a href="../players/player_21526.html">Jeff Nelson</a> (0-2) <br>HR - SEA: <a href="../players/player_21564.html">Mike Cameron</a> (7)  BOS: <a href="../players/player_22168.html">Fred Lynn</a> (11)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1012.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1012.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1013.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1013.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/cincinnati_reds_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/houston_astros_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_7.html">Cincinnati</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">1</td>
+			<td class="dc " width="18px">6</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_12.html" style="font-weight:bold;">Houston</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">X</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">2</td>
+			<td class="dc " width="18px">8</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Reds Defeated, 2-1<br>W: <a href="../players/player_22625.html">Shane Reynolds</a> (8-4) L: <a href="../players/player_22435.html">Jim Maloney</a> (2-5) S: <a href="../players/player_22615.html">Larry Andersen</a> (21)<br>HR - None
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/new_york_yankees_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/minnesota_twins_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_18.html">New York</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">3</td>
+			<td class="dc " width="18px">10</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_17.html" style="font-weight:bold;">Minnesota</a>
+			</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">X</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">9</td>
+			<td class="dc " width="18px">12</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Goslin Leads Twins to 9-3 Win Over Yankees<br>W: <a href="../players/player_21940.html">Johan Santana</a> (5-5) L: <a href="../players/player_21838.html">Red Ruffing</a> (4-8) <br>HR - MIN: <a href="../players/player_21975.html">Chuck Knoblauch</a> (6), <a href="../players/player_21976.html">Harmon Killebrew</a> (14), <a href="../players/player_21981.html">Goose Goslin</a> 2 (3)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1014.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1014.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1016.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1016.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/detroit_tigers_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/kansas_city_royals_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">10</th>
+						<th class="dc" width="18px">11</th>
+						<th class="dc" width="18px">12</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_10.html">Detroit</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">3</td>
+			<td class="dc " width="18px">11</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_13.html" style="font-weight:bold;">Kansas City</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">4</td>
+			<td class="dc " width="18px">15</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Tigers Suffer 4-3 Setback<br>W: <a href="../players/player_22679.html">Steve Mingori</a> (2-2) L: <a href="../players/player_22568.html">Mike Henneman</a> (2-2) <br>HR - DET: <a href="../players/player_22541.html">Charlie Gehringer</a> (4)  
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/los_angeles_angels_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/oakland_athletics_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_14.html">Los Angeles</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">3</td>
+			<td class="dc " width="18px">6</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_20.html" style="font-weight:bold;">Oakland</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">X</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">4</td>
+			<td class="dc " width="18px">8</td>
+			<td class="dc " width="18px">2</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Tight Tilt Goes to Athletics, 4-3<br>W: <a href="../players/player_21801.html">Vida Blue</a> (1-1) L: <a href="../players/player_22731.html">Frank Tanana</a> (5-3) S: <a href="../players/player_19935.html">Lennart Fenger</a> (12)<br>HR - LAA: <a href="../players/player_22710.html">Tim Salmon</a> (9)  OAK: <a href="../players/player_19915.html">Tony Martínez</a> (21), <a href="../players/player_21821.html">Rickey Henderson</a> (15)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+</table>
+	<table cellspacing="0" cellpadding="0" width="968px">
+		<tr><th colspan="2" class="boxtitle" style="padding:8px 0px 8px 4px;">National League</th></tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1004.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1004.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1005.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1005.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/pittsburgh_pirates_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/chicago_cubs_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_22.html" style="font-weight:bold;">Pittsburgh</a>
+			</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">5</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">9</td>
+			<td class="dc " width="18px">8</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_6.html">Chicago</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">4</td>
+			<td class="dc " width="18px">9</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Victory Over Cubs Takes Pittsburgh to 49-19<br>W: <a href="../players/player_21697.html">John Candelaria</a> (9-4) L: <a href="../players/player_22377.html">Randy Myers</a> (4-2) <br>HR - PIT: <a href="../players/player_21714.html">Andrew McCutchen</a> (11), <a href="../players/player_21718.html">Ralph Kiner</a> (3)  
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/arizona_diamondbacks_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/philadelphia_phillies_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">10</th>
+						<th class="dc" width="18px">11</th>
+						<th class="dc" width="18px">12</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_1.html">Arizona</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">4</td>
+			<td class="dc " width="18px">7</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_21.html" style="font-weight:bold;">Philadelphia</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">5</td>
+			<td class="dc " width="18px">12</td>
+			<td class="dc " width="18px">2</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Philadelphia Crafts 5-4 Win<br>W: <a href="../players/player_21732.html">Mitch Williams</a> (3-2) L: <a href="../players/player_22305.html">Omar Daal</a> (1-1) <br>HR - ARI: <a href="../players/player_22338.html">Tony Batista</a> (12)  PHI: <a href="../players/player_21758.html">Mike Schmidt</a> 2 (11)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1009.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1009.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1007.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1007.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/colorado_rockies_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/miami_marlins_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_9.html" style="font-weight:bold;">Colorado</a>
+			</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">4</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">7</td>
+			<td class="dc " width="18px">14</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_11.html">Miami</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">5</td>
+			<td class="dc " width="18px">7</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Gonzalez Stars in 7-5 Rockies Win<br>W: <a href="../players/player_22254.html">Jose Jimenez</a> (1-0) L: <a href="../players/player_22055.html">Josh Johnson</a> (3-3) S: <a href="../players/player_21030.html">Huston Street</a> (10)<br>HR - COL: <a href="../players/player_22506.html">Carlos Gonzalez</a> 2 (16)  MIA: <a href="../players/player_22798.html">Cliff Floyd</a> (4)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/atlanta_braves_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/new_york_mets_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_2.html" style="font-weight:bold;">Atlanta</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">5</td>
+			<td class="dc " width="18px">12</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_19.html">New York</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">3</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">3</td>
+			<td class="dc " width="18px">4</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Braves Back to .500 With Win Over Mets<br>W: <a href="../players/player_22246.html">Johnny Sain</a> (10-3) L: <a href="../players/player_21904.html">David Cone</a> (7-6) S: <a href="../players/player_22235.html">Craig Kimbrel</a> (19)<br>HR - ATL: <a href="../players/player_22263.html">Eddie Mathews</a> (7), <a href="../players/player_22265.html">Javy Lopez</a> (6)  NYM: <a href="../players/player_21910.html">Darryl Strawberry</a> (13)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1015.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1015.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1017.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1017.html">Game Log</a>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/texas_rangers_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/st_louis_cardinals_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_28.html">Texas</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">1</td>
+			<td class="dc " width="18px">7</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_26.html" style="font-weight:bold;">St. Louis</a>
+			</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">6</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">4</td>
+			<td class="dc " width="18px">X</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">14</td>
+			<td class="dc " width="18px">19</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Cardinals Whack Rangers, 14-1<br>W: <a href="../players/player_21483.html">Dizzy Dean</a> (6-5) L: <a href="../players/player_21381.html">Dick Bosman</a> (7-6) <br>HR - STL: <a href="../players/player_21490.html">Joe Torre</a> (3), <a href="../players/player_21502.html">Willie McGee</a> (7)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/milwaukee_brewers_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/los_angeles_dodgers_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_16.html">Milwaukee</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">1</td>
+			<td class="dc " width="18px">5</td>
+			<td class="dc " width="18px">2</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_15.html" style="font-weight:bold;">Los Angeles</a>
+			</td>
+			<td class="dc " width="18px">4</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">4</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">X</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">12</td>
+			<td class="dc " width="18px">15</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Dodgers Spank Brewers, 12-1<br>W: <a href="../players/player_22774.html">Orel Hershiser</a> (10-3) L: <a href="../players/player_22009.html">Chris Bosio</a> (1-8) <br>HR - LAD: <a href="../players/player_22764.html">Duke Snider</a> 2 (4)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			<a class="boxlink" href="../box_scores/game_box_1018.html">Box Score</a> | <a class="boxlink" href="../game_logs/log_1018.html">Game Log</a>
+
+		</td>
+		<td class="boxtitle" style="padding:0px 0px 0px 4px;">
+			
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:0px 4px 8px 4px;">
+				<table cellspacing="0" cellpadding="0" width="478px" height="100%" class="databg">
+		<tr>
+			<td valign="top" width="58px" style="padding:4px;">
+				<img src="../images/team_logos/washington_nationals_50.png" width="50px" height="50px"><br>
+				<img src="../images/team_logos/san_diego_padres_50.png" width="50px" height="50px">
+			</td>
+			<td width="420px" valign="top">
+				<table cellspacing="0" cellpadding="0" width="420px" class="data">
+					<tr>
+						<th class="dc">&#160;</th>
+						<th class="dc" width="18px">1</th>
+						<th class="dc" width="18px">2</th>
+						<th class="dc" width="18px">3</th>
+						<th class="dc" width="18px">4</th>
+						<th class="dc" width="18px">5</th>
+						<th class="dc" width="18px">6</th>
+						<th class="dc" width="18px">7</th>
+						<th class="dc" width="18px">8</th>
+						<th class="dc" width="18px">9</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">&#160;</th>
+						<th class="dc" width="18px">R</th>
+						<th class="dc" width="18px">H</th>
+						<th class="dc" width="18px">E</th>
+					</tr>		
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_30.html">Washington</a>
+			</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">1</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">1</td>
+			<td class="dc " width="18px">7</td>
+			<td class="dc " width="18px">1</td>
+		</tr>
+
+							<tr>
+			<td class="dl">
+				<a href="../teams/team_23.html" style="font-weight:bold;">San Diego</a>
+			</td>
+			<td class="dc " width="18px">2</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">0</td>
+			<td class="dc " width="18px">X</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc " width="18px">&#160;</td>
+			<td class="dc  grey bold" width="18px">2</td>
+			<td class="dc " width="18px">9</td>
+			<td class="dc " width="18px">0</td>
+		</tr>
+
+				</table>
+				<table cellspacing="0" cellpadding="0" width="420px" class="databg">
+					<tr>
+						<td style="padding:4px;">
+							
+							Close Win Moves Padres to 38-31<br>W: <a href="../players/player_21626.html">Ed Whitson</a> (5-4) L: <a href="../players/player_21266.html">Dennis Martinez</a> (1-4) S: <a href="../players/player_21640.html">Luke Gregerson</a> (2)<br>HR - SD: <a href="../players/player_21655.html">Bip Roberts</a> (5)
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+		</td>
+		<td style="padding:0px 0px 8px 4px;">
+			
+		</td>
+	</tr>
+</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td style="padding-top:8px;"><!-- OOTP IGNORE START PAGE FOOTER --><img src="../images/bnn_bottom_bar.jpg" border="0"><!-- OOTP IGNORE END PAGE FOOTER --></td>
+
+	</tr>	
+</table>
+
+<!-- OOTP IGNORE START PAGE BOTTOM -->
+<table cellspacing="0" cellpadding="0" align="center" width="968px">
+	
+	<tr>
+		<td style="padding-top:2px; font-size:11px; text-align:center;">
+			Sunday, July 5th , 2026 - OOTP Baseball 27.2 Build 60
+		</td>
+	</tr>	
+</table>
+<!-- OOTP IGNORE END PAGE BOTTOM -->
+
+
+</body>
+</html>
